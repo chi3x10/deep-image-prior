@@ -13,6 +13,8 @@ class Concat(nn.Module):
         super(Concat, self).__init__()
         self.dim = dim
 
+        print("DIM: ", dim)
+
         for idx, module in enumerate(args):
             self.add_module(str(idx), module)
 
